@@ -18,7 +18,7 @@ from selenium.webdriver.support import expected_conditions as EC
 chrome_options = Options()
 chrome_options.add_argument('headless')
 
-webdriver_service = Service("/usr/bin/chromedriver") ## path to where you saved chromedriver binary
+webdriver_service = Service(<path to chrome driver>) ## path to where you saved chromedriver binary
 browser = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
 
