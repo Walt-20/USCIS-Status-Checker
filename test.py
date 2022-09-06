@@ -27,7 +27,7 @@ url = 'https://egov.uscis.gov/casestatus/landing.do'
 browser.get(url) 
 
 caseno_input = WebDriverWait(browser,10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[id='receipt_number']")))
-caseno_input.send_keys('IOE0914378133')
+caseno_input.send_keys(<Case Number Here>)
 WebDriverWait(browser,10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[title='CHECK STATUS']"))).click()
 time.sleep(3)
 splash = browser.find_element(By.CLASS_NAME, "text-center")
@@ -69,7 +69,7 @@ for p in paragraph:
 email = "ahwl77@gmail.com"
 pwd = "gzlkzokwojlbvpwb"
 
-sms_gateway = ['2697204070@msg.fi.google.com', '9159101469@msg.fi.google.com']
+sms_gateway = [<numbers go here>]
 smtp = "smtp.gmail.com"
 port = 587
 server = smtplib.SMTP(smtp, port)
