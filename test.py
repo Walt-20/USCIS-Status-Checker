@@ -38,8 +38,8 @@ paragraph = splash.find_elements(By.TAG_NAME, 'p')
 for p in paragraph:
     para = p.text
 
-email = ""
-pwd = ""
+email = <email goes here>
+pwd = <App Password goes here>
 
 sms_gateway = [<numbers go here>]
 smtp = "smtp.gmail.com"
