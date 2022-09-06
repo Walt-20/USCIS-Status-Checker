@@ -37,37 +37,9 @@ for h in header:
 paragraph = splash.find_elements(By.TAG_NAME, 'p')
 for p in paragraph:
     para = p.text
-# with open('file.txt', 'a') as f:
-#     f.write('\nExecuted: {}'.format(ct))
-#     f.write('{} \n {} \n'.format(h1, p))
-# slack_url = "https://hooks.slack.com/services/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"
-# message = (hdr + "\n" + para)
-# title = (f"New Incoming Message :zap:")
-# slack_data = {
-#     "username": "NotificationBot",
-#     "icon_emoji": ":satellite:",
-#     #"channel" : "#somerandomcahnnel",
-#     "attachments": [
-#         {
-#             "color": "#9733EE",
-#             "fields": [
-#                 {
-#                     "title": title,
-#                     "value": message,
-#                     "short": "false",
-#                 }
-#             ]
-#         }
-#     ]
-# }
-# byte_length = str(sys.getsizeof(slack_data))
-# headers = {'Content-Type': "application/json", 'Content-Length': byte_length}
-# response = requests.post(slack_url, data=json.dumps(slack_data), headers=headers)
-# if response.status_code != 200:
-#     raise Exception(response.status_code, response.text)
 
-email = "ahwl77@gmail.com"
-pwd = "gzlkzokwojlbvpwb"
+email = ""
+pwd = ""
 
 sms_gateway = [<numbers go here>]
 smtp = "smtp.gmail.com"
